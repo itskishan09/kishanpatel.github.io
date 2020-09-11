@@ -1,0 +1,7 @@
+#realme7{
+  background-color: yellow;
+  height: 200px;
+  width: 400px;
+  margin-left: calc( 50% - 200px ) ;
+  margin-top: 100%;
+}
