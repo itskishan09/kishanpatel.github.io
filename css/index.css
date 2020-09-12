@@ -68,6 +68,7 @@ img {vertical-align: middle;}
   display: flex;
   height: 100%;
 }
+
 .col-2{
   min-width: 300px;
   flex-basis: 50%;
@@ -134,25 +135,6 @@ img {vertical-align: middle;}
 }
 }
 
-.featuring{
-  margin-top: 15px;
-  display: flex;
-  width: 95%;
-  height: 250px;
-  margin-left: 2.5%;
-  border-radius: 5px;
-  background-color: white;
-}
-
-.featuring h3{
-  position: relative;
-  margin-left: 1rem;
-  font-size: 25px;
-  display: block;
-  margin-top: 2px;
-  color: rgb(120, 120, 120);
-}
-
 .asklogin{
   margin-top: 15px;
   display: inline-block;
@@ -188,4 +170,101 @@ img {vertical-align: middle;}
 }
 .asklogin button:active{
   background-color: rgb(185, 90, 2) ;
+}
+
+.team{
+  margin-top: 15px;
+  width: 100%;
+  height: 350px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.teamheading{
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 2rem;
+}
+.team .imgcard{
+  text-align: center;
+  width: 20%;
+  margin-top: 50px;
+  display: inline-block;
+}
+
+.imgcard img{
+  margin-top: 30px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 2px black solid;
+}
+.imgcard img:hover{
+  height: 120px;
+  width: 120px;
+  transition: 0.3s ease;
+}
+.imgcard h2{
+  margin-top: 20px;
+}
+.imgcard p{
+  margin-top: 10px;
+}
+
+body{
+  background-color: rgb(220, 220, 220);
+
+}
+
+.products{
+  display: flex;
+  margin-top: 15px;
+  width: 95%;
+  height: 250px;
+  margin-left: 2.5%;
+  border-radius: 5px;
+  background-color: white;
+  max-height: 250px;
+  justify-content: center;
+  overflow-x: scroll;
+
+}
+
+.title{
+  position: absolute;
+  margin-left: 3rem;
+  font-size: 20px;
+  display: block;
+  margin-top: 1rem;
+  color: rgb(120, 120, 120);
+}
+
+.card {
+  margin: 25px auto;
+  display: inline-block;
+  width: 300px;
+  height: 200px;
+  margin-top: 2.5%;
+  text-align: center;
+  font-family: arial;
+  border-radius: 5px;
+}
+
+.card img{
+  margin-top: 10px;
+  width: auto;
+  height: 200px;
+}
+ .card img:hover{
+   transition: 0.3s all ease-in-out;
+  height: 210px;
+  width: auto;
+ }
+
+.flex-products{
+  justify-content: space-between;
+  display: flex;
+  height: inherit;
+  width: inherit;
 }
