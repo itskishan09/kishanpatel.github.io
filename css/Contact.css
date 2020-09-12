@@ -3,7 +3,20 @@ body{
     padding: 0px;
     height: auto;
     width: auto;
-    background-color: rgb(220, 220, 220);
+	background: linear-gradient(-45deg, #a352ee, #e73ccb, #23a6d5, #2335d5);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 a{
 	text-decoration:none;
@@ -113,6 +126,7 @@ a{
 	border: none;
 	outline: none;
 	margin-top: 20px;
+	font-weight: 900;
 	border-radius: 10px;
 	box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
     letter-spacing: 1px;
@@ -170,4 +184,62 @@ a{
 	}
 	
 }
- 
+.loader{
+	position: absolute;
+	display: block;
+	z-index: -1;
+	height: 100%;
+	width: 100%;
+	background-color: #ffffff;
+}
+.loader ul li{
+	display: inline-block;
+	position: relative;
+	height: 8px;
+	width: 8px;
+	top: 50%;
+	left: calc(50% - 26px);
+	transform: translate(-50%,-50%);
+	background-color: rgb(132, 0, 255);
+	border-radius: 50%;
+	animation-name: preloader;
+	animation-duration: 0.5s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+.loader ul{
+	display: inline;
+	position: relative;
+
+}
+
+.loader li:nth-child(1){
+	animation-delay: 0s;
+}
+.loader li:nth-child(2){
+	animation-delay: 0.09s;
+
+}
+.loader li:nth-child(3){
+	animation-delay: 0.18s;
+
+}
+.loader li:nth-child(4){
+	animation-delay: 0.27s;
+
+}
+.loader li:nth-child(5){
+	animation-delay: 0.36s;
+
+}
+@keyframes preloader{
+	0%{
+		top: 50%;
+	}
+	50%{
+		top: 49%;
+	}
+	100%{
+		top: 50%;
+	}
+}

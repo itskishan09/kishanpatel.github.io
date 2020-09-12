@@ -59,8 +59,8 @@
         <!--inputs------------------>
             <div class="c-inputs">
             <form>
-                <input type="text" placeholder="Full Name"/>	
-                <input type="email" placeholder="Example@gmail.com"/>
+                <input type="text" required placeholder="Full Name"/>	
+                <input type="email" required placeholder="Example@gmail.com"/>
                 <textarea name="message" placeholder="Write Message"></textarea>
         <!--sumbit-btn----------->
                 <button>SEND</button>
@@ -70,8 +70,24 @@
         </div>
         <!--map------------------->
         <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.090456530584!2d73.13103941488413!3d21.069049085976552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be060e07393bc51%3A0xf96e044991e337e9!2sUka%20Tarsadia%20University!5e0!3m2!1sen!2sin!4v1599655743723!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <div class="loader" id="loader">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <iframe onload="loading()" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.090456530584!2d73.13103941488413!3d21.069049085976552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be060e07393bc51%3A0xf96e044991e337e9!2sUka%20Tarsadia%20University!5e0!3m2!1sen!2sin!4v1599655743723!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <script>
+                var loader = document.getElementById("loader");
+                function loading(){
+                    loader.style.display= 'none';
+                }
+            </script>
         </div>
         </section>
+
 </body>
 </html>
